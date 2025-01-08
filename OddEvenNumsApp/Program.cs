@@ -26,27 +26,7 @@ namespace OddEvenNumsApp
             Console.Write(" ]");
             Console.WriteLine();
         }
-        static bool IsEven(int num)
-        {
-            if (num % 2 == 0)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-        static bool IsOdd(int num)
-        {
-            if (num % 2 != 0)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
+        static bool IsEven(int num) => num % 2 == 0;
+        static bool IsOdd(int num) => !IsEven(num);
     }
 }
